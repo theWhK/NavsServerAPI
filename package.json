@@ -1,0 +1,26 @@
+{
+  "name": "servernode",
+  "version": "1.0.0",
+  "description": "api em nodejs",
+  "main": "start.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/navarrowebapi/nodeserverapi.git"
+  },
+  "author": "fabio navarro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "body-parser": "1.18.3",
+    "mongoose": "5.4.13",
+    "request": "2.88.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-node8": "^1.2.0",
+    "nodemon": "^1.18.10"
+  }
+}
