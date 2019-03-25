@@ -1,0 +1,17 @@
+{
+    "apps" : [{
+      "name"        : "navs5_app",
+      "script"      : "start.js",
+      "args"        : [],
+      "log_date_format" : "DD-MM-YYYY HH:mm Z",
+      "watch"       : true,
+      "node_args"   : "",
+      "merge_logs"  : false,
+      "cwd"         : "./",
+      "exec_mode"  : "cluster",
+      "instances": "1",
+      "env": {
+          "NODE_ENV": "local"
+      }
+    }]
+}

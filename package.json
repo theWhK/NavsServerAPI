@@ -1,26 +1,26 @@
 {
-  "name": "servernode",
+  "name": "navsserverapi",
   "version": "1.0.0",
-  "description": "api em nodejs",
+  "description": "",
   "main": "start.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "docker-compose up --build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/navarrowebapi/nodeserverapi.git"
+    "url": "https://github.com/theWhK/NavsServerAPI"
   },
-  "author": "fabio navarro",
+  "author": "Willian Hideki",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "babel-cli": "^6.26.0",
     "body-parser": "1.18.3",
-    "mongoose": "5.4.13",
+    "express": "4.16.4",
+    "express-mongo-crud": "^1.3.0",
+    "mongoose": "^5.4.13",
     "request": "2.88.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-node8": "^1.2.0",
-    "nodemon": "^1.18.10"
+    "babel-preset-node8": "^1.2.0"
   }
 }

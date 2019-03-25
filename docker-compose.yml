@@ -1,0 +1,17 @@
+version: '2'
+
+# Define the services/containers to be run
+services:
+  navs5_app: #name of your service
+    build: ./ # specify the directory of the Dockerfile
+    ports:
+      - "3000:3000" #specify ports forwarding
+    links:
+      - navs5_db # link this service to the database service
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - navs5_db
+      
+  navs5_db: # name of the service
+    image: mongo # specify image to build container from
