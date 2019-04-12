@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:jessie
 
 WORKDIR /usr/src/app
 

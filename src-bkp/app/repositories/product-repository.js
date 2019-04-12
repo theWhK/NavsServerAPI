@@ -17,3 +17,12 @@ exports.getById = async (id) => {
     const res = await Product.findById(id)
     return res
 }
+
+/**
+ * Put
+ */
+exports.put = async (id, data) => {
+    await Product.findByIdAndUpdate(id, {
+        
+    })
+}
