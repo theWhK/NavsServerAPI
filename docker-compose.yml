@@ -5,13 +5,18 @@ services:
   navs5_app: #name of your service
     build: ./ # specify the directory of the Dockerfile
     ports:
-      - "3000:3000" #specify ports forwarding
+      - "3000:3000" #specify ports forwarding,
+      - "9229:9229"
     links:
       - navs5_db # link this service to the database service
     volumes:
       - .:/usr/src/app
     depends_on:
       - navs5_db
+    command:
+      - node
+      - "--inspect-brk=0.0.0.0"
+      - "."
       
   navs5_db: # name of the service
     image: mongo # specify image to build container from
